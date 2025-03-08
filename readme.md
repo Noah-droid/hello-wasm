@@ -18,6 +18,15 @@ To install Rust and the necessary tools:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup target add wasm32-unknown-unknown
 ```
+Generate Project using the template
+
+```sh
+cargo generate --git https://github.com/CosmWasm/cw-template.git --name my_contract
+cd my_contract
+```
+Replace my_contract with your preferred name.
+
+
 
 ## How to Compile
 To build the contract:
